@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		301B30031ECAAE4800DDBD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B30021ECAAE4800DDBD18 /* AppDelegate.swift */; };
+		301B30051ECAAE4800DDBD18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B30041ECAAE4800DDBD18 /* ViewController.swift */; };
+		301B30081ECAAE4800DDBD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301B30061ECAAE4800DDBD18 /* Main.storyboard */; };
+		301B300A1ECAAE4800DDBD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301B30091ECAAE4800DDBD18 /* Assets.xcassets */; };
+		301B300D1ECAAE4800DDBD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301B300B1ECAAE4800DDBD18 /* LaunchScreen.storyboard */; };
+		301B30181ECAAE4800DDBD18 /* RulerViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B30171ECAAE4800DDBD18 /* RulerViewUITests.swift */; };
+		301B302B1ECAAE8600DDBD18 /* FERulerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 301B30291ECAAE8600DDBD18 /* FERulerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		301B302E1ECAAE8600DDBD18 /* FERulerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301B30271ECAAE8600DDBD18 /* FERulerView.framework */; };
+		301B302F1ECAAE8600DDBD18 /* FERulerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 301B30271ECAAE8600DDBD18 /* FERulerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		301B30381ECAAEAD00DDBD18 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B30341ECAAEAD00DDBD18 /* Defines.swift */; };
+		301B30391ECAAEAD00DDBD18 /* FE_RulerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B30351ECAAEAD00DDBD18 /* FE_RulerScrollView.swift */; };
+		301B303A1ECAAEAD00DDBD18 /* FE_RulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B30361ECAAEAD00DDBD18 /* FE_RulerView.swift */; };
+		301B303B1ECAAEAD00DDBD18 /* Images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 301B30371ECAAEAD00DDBD18 /* Images.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301B30141ECAAE4800DDBD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301B2FF71ECAAE4800DDBD18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301B2FFE1ECAAE4800DDBD18;
+			remoteInfo = RulerView;
+		};
+		301B302C1ECAAE8600DDBD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301B2FF71ECAAE4800DDBD18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301B30261ECAAE8600DDBD18;
+			remoteInfo = FERulerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		301B30331ECAAE8600DDBD18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				301B302F1ECAAE8600DDBD18 /* FERulerView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		301B2FFF1ECAAE4800DDBD18 /* RulerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RulerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		301B30021ECAAE4800DDBD18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		301B30041ECAAE4800DDBD18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		301B30071ECAAE4800DDBD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		301B30091ECAAE4800DDBD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		301B300C1ECAAE4800DDBD18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		301B300E1ECAAE4800DDBD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301B30131ECAAE4800DDBD18 /* RulerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RulerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		301B30171ECAAE4800DDBD18 /* RulerViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewUITests.swift; sourceTree = "<group>"; };
+		301B30191ECAAE4800DDBD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301B30271ECAAE8600DDBD18 /* FERulerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FERulerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		301B30291ECAAE8600DDBD18 /* FERulerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FERulerView.h; sourceTree = "<group>"; };
+		301B302A1ECAAE8600DDBD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301B30341ECAAEAD00DDBD18 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		301B30351ECAAEAD00DDBD18 /* FE_RulerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FE_RulerScrollView.swift; sourceTree = "<group>"; };
+		301B30361ECAAEAD00DDBD18 /* FE_RulerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FE_RulerView.swift; sourceTree = "<group>"; };
+		301B30371ECAAEAD00DDBD18 /* Images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Images.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		301B2FFC1ECAAE4800DDBD18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B302E1ECAAE8600DDBD18 /* FERulerView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B30101ECAAE4800DDBD18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B30231ECAAE8600DDBD18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		301B2FF61ECAAE4800DDBD18 = {
+			isa = PBXGroup;
+			children = (
+				301B30011ECAAE4800DDBD18 /* RulerView */,
+				301B30161ECAAE4800DDBD18 /* RulerViewUITests */,
+				301B30281ECAAE8600DDBD18 /* FERulerView */,
+				301B30001ECAAE4800DDBD18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		301B30001ECAAE4800DDBD18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301B2FFF1ECAAE4800DDBD18 /* RulerView.app */,
+				301B30131ECAAE4800DDBD18 /* RulerViewUITests.xctest */,
+				301B30271ECAAE8600DDBD18 /* FERulerView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		301B30011ECAAE4800DDBD18 /* RulerView */ = {
+			isa = PBXGroup;
+			children = (
+				301B30021ECAAE4800DDBD18 /* AppDelegate.swift */,
+				301B30041ECAAE4800DDBD18 /* ViewController.swift */,
+				301B30061ECAAE4800DDBD18 /* Main.storyboard */,
+				301B30091ECAAE4800DDBD18 /* Assets.xcassets */,
+				301B300B1ECAAE4800DDBD18 /* LaunchScreen.storyboard */,
+				301B300E1ECAAE4800DDBD18 /* Info.plist */,
+			);
+			path = RulerView;
+			sourceTree = "<group>";
+		};
+		301B30161ECAAE4800DDBD18 /* RulerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				301B30171ECAAE4800DDBD18 /* RulerViewUITests.swift */,
+				301B30191ECAAE4800DDBD18 /* Info.plist */,
+			);
+			path = RulerViewUITests;
+			sourceTree = "<group>";
+		};
+		301B30281ECAAE8600DDBD18 /* FERulerView */ = {
+			isa = PBXGroup;
+			children = (
+				301B30341ECAAEAD00DDBD18 /* Defines.swift */,
+				301B30351ECAAEAD00DDBD18 /* FE_RulerScrollView.swift */,
+				301B30361ECAAEAD00DDBD18 /* FE_RulerView.swift */,
+				301B30371ECAAEAD00DDBD18 /* Images.bundle */,
+				301B30291ECAAE8600DDBD18 /* FERulerView.h */,
+				301B302A1ECAAE8600DDBD18 /* Info.plist */,
+			);
+			path = FERulerView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		301B30241ECAAE8600DDBD18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B302B1ECAAE8600DDBD18 /* FERulerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		301B2FFE1ECAAE4800DDBD18 /* RulerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301B301C1ECAAE4800DDBD18 /* Build configuration list for PBXNativeTarget "RulerView" */;
+			buildPhases = (
+				301B2FFB1ECAAE4800DDBD18 /* Sources */,
+				301B2FFC1ECAAE4800DDBD18 /* Frameworks */,
+				301B2FFD1ECAAE4800DDBD18 /* Resources */,
+				301B30331ECAAE8600DDBD18 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301B302D1ECAAE8600DDBD18 /* PBXTargetDependency */,
+			);
+			name = RulerView;
+			productName = RulerView;
+			productReference = 301B2FFF1ECAAE4800DDBD18 /* RulerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		301B30121ECAAE4800DDBD18 /* RulerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301B301F1ECAAE4800DDBD18 /* Build configuration list for PBXNativeTarget "RulerViewUITests" */;
+			buildPhases = (
+				301B300F1ECAAE4800DDBD18 /* Sources */,
+				301B30101ECAAE4800DDBD18 /* Frameworks */,
+				301B30111ECAAE4800DDBD18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301B30151ECAAE4800DDBD18 /* PBXTargetDependency */,
+			);
+			name = RulerViewUITests;
+			productName = RulerViewUITests;
+			productReference = 301B30131ECAAE4800DDBD18 /* RulerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		301B30261ECAAE8600DDBD18 /* FERulerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301B30301ECAAE8600DDBD18 /* Build configuration list for PBXNativeTarget "FERulerView" */;
+			buildPhases = (
+				301B30221ECAAE8600DDBD18 /* Sources */,
+				301B30231ECAAE8600DDBD18 /* Frameworks */,
+				301B30241ECAAE8600DDBD18 /* Headers */,
+				301B30251ECAAE8600DDBD18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FERulerView;
+			productName = FERulerView;
+			productReference = 301B30271ECAAE8600DDBD18 /* FERulerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		301B2FF71ECAAE4800DDBD18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = hzf;
+				TargetAttributes = {
+					301B2FFE1ECAAE4800DDBD18 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GP468JB429;
+						ProvisioningStyle = Automatic;
+					};
+					301B30121ECAAE4800DDBD18 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GP468JB429;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 301B2FFE1ECAAE4800DDBD18;
+					};
+					301B30261ECAAE8600DDBD18 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GP468JB429;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 301B2FFA1ECAAE4800DDBD18 /* Build configuration list for PBXProject "RulerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 301B2FF61ECAAE4800DDBD18;
+			productRefGroup = 301B30001ECAAE4800DDBD18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				301B2FFE1ECAAE4800DDBD18 /* RulerView */,
+				301B30121ECAAE4800DDBD18 /* RulerViewUITests */,
+				301B30261ECAAE8600DDBD18 /* FERulerView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		301B2FFD1ECAAE4800DDBD18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B300D1ECAAE4800DDBD18 /* LaunchScreen.storyboard in Resources */,
+				301B300A1ECAAE4800DDBD18 /* Assets.xcassets in Resources */,
+				301B30081ECAAE4800DDBD18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B30111ECAAE4800DDBD18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B30251ECAAE8600DDBD18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B303B1ECAAEAD00DDBD18 /* Images.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		301B2FFB1ECAAE4800DDBD18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B30051ECAAE4800DDBD18 /* ViewController.swift in Sources */,
+				301B30031ECAAE4800DDBD18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B300F1ECAAE4800DDBD18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B30181ECAAE4800DDBD18 /* RulerViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301B30221ECAAE8600DDBD18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B30381ECAAEAD00DDBD18 /* Defines.swift in Sources */,
+				301B303A1ECAAEAD00DDBD18 /* FE_RulerView.swift in Sources */,
+				301B30391ECAAEAD00DDBD18 /* FE_RulerScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301B30151ECAAE4800DDBD18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 301B2FFE1ECAAE4800DDBD18 /* RulerView */;
+			targetProxy = 301B30141ECAAE4800DDBD18 /* PBXContainerItemProxy */;
+		};
+		301B302D1ECAAE8600DDBD18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 301B30261ECAAE8600DDBD18 /* FERulerView */;
+			targetProxy = 301B302C1ECAAE8600DDBD18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		301B30061ECAAE4800DDBD18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301B30071ECAAE4800DDBD18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		301B300B1ECAAE4800DDBD18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301B300C1ECAAE4800DDBD18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		301B301A1ECAAE4800DDBD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		301B301B1ECAAE4800DDBD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		301B301D1ECAAE4800DDBD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GP468JB429;
+				INFOPLIST_FILE = RulerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzf.RulerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		301B301E1ECAAE4800DDBD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GP468JB429;
+				INFOPLIST_FILE = RulerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzf.RulerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		301B30201ECAAE4800DDBD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GP468JB429;
+				INFOPLIST_FILE = RulerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzf.RulerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RulerView;
+			};
+			name = Debug;
+		};
+		301B30211ECAAE4800DDBD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GP468JB429;
+				INFOPLIST_FILE = RulerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzf.RulerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RulerView;
+			};
+			name = Release;
+		};
+		301B30311ECAAE8600DDBD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GP468JB429;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FERulerView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzf.FERulerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		301B30321ECAAE8600DDBD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GP468JB429;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FERulerView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hzf.FERulerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		301B2FFA1ECAAE4800DDBD18 /* Build configuration list for PBXProject "RulerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B301A1ECAAE4800DDBD18 /* Debug */,
+				301B301B1ECAAE4800DDBD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301B301C1ECAAE4800DDBD18 /* Build configuration list for PBXNativeTarget "RulerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B301D1ECAAE4800DDBD18 /* Debug */,
+				301B301E1ECAAE4800DDBD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		301B301F1ECAAE4800DDBD18 /* Build configuration list for PBXNativeTarget "RulerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B30201ECAAE4800DDBD18 /* Debug */,
+				301B30211ECAAE4800DDBD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		301B30301ECAAE8600DDBD18 /* Build configuration list for PBXNativeTarget "FERulerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B30311ECAAE8600DDBD18 /* Debug */,
+				301B30321ECAAE8600DDBD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 301B2FF71ECAAE4800DDBD18 /* Project object */;
+}
